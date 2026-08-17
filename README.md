@@ -4,7 +4,15 @@
 
 当前版本：**1.0.0**
 
-安装包在 [Releases](https://github.com/owenbelloc/Skillbase/releases) 下载。未签名，第一次打开请右键 → 打开。
+### 安装（Mac）
+
+1. 打开 [Releases](https://github.com/owenbelloc/Skillbase/releases/latest)，下载 `Skillbase-1.0.0.dmg`
+2. 双击打开安装盘
+3. 把 **Skillbase** 拖到旁边的 **Applications（应用程序）**
+4. 打开「应用程序」，再把 Skillbase 拖到程序坞，以后就能直接点开
+5. 应用未签名，第一次请 **右键 → 打开**
+
+也可以下载 `Skillbase-macOS.zip` 解压后同样拖进「应用程序」。
 
 ## 能做什么
 
@@ -52,7 +60,7 @@ git push origin v2.0.0
 
 ```bash
 ./scripts/package-app.sh
-gh release create v2.0.0 dist/Skillbase-macOS.zip --title "Skillbase 2.0.0" --notes-file CHANGELOG.md
+gh release create v2.0.0 dist/Skillbase-2.0.0.dmg dist/Skillbase-macOS.zip --title "Skillbase 2.0.0" --notes-file CHANGELOG.md
 ```
 
 ## 说明

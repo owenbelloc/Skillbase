@@ -18,5 +18,7 @@ jobs:
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/Skillbase-macOS.zip
+          files: |
+            dist/Skillbase-macOS.zip
+            dist/Skillbase-*.dmg
           generate_release_notes: true

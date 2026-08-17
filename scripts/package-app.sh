@@ -31,6 +31,9 @@ ZIP="$ROOT/dist/Skillbase-macOS.zip"
 rm -f "$ZIP"
 ditto -c -k --keepParent "$APP" "$ZIP"
 
+"$ROOT/scripts/make-dmg.sh"
+
 echo "→ Packed $APP"
 echo "→ Archive $ZIP"
+echo "→ Disk image $ROOT/dist/Skillbase-$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$ROOT/Info.plist").dmg"
 echo "  open \"$APP\""
